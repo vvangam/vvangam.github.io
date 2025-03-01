@@ -1,374 +1,266 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.4">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dr. Vishwa Vallabh Angampally - Portfolio</title>
+
+  <!-- Simple CSS styling. Customize as you like! -->
+  <style>
+    * {
+      margin: 0; 
+      padding: 0; 
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+      margin: 0;
+    }
+    header, nav, main, footer {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    header {
+      text-align: center;
+      padding-top: 40px;
+    }
+    header h1 {
+      margin-bottom: 10px;
+    }
+    nav {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    nav a {
+      text-decoration: none;
+      margin: 0 10px;
+      color: #333;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 4px;
+    }
+    h2.section-title {
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+      border-bottom: 2px solid #333;
+      padding-bottom: 10px;
+    }
+    details {
+      margin: 10px 0;
+    }
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    summary:hover {
+      color: #007acc;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #555;
+    }
+    /* Customize or add more styling here */
   </style>
 </head>
+
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="description" content="Portfolio of Dr. Vishwa Vallabh Angampally - Bridging AI &amp; Medicine with Data Science" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta property="og:title" content="Dr. Vishwa Vallabh Angampally Portfolio" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta property="og:description" content="Showcasing projects in AI, Healthcare, Data Science, and more." /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta property="og:image" content="https://via.placeholder.com/1200x630" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta property="og:url" content="https://vvangam.github.io/your-repo-name/" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Dr. Vishwa Vallabh Angampally | Portfolio&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body class="font-sans antialiased text-gray-800"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Navigation --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;nav class="bg-white shadow fixed w-full z-10"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container mx-auto px-4 py-4 flex justify-between items-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="#hero" class="text-xl font-bold"&gt;Dr. Vishwa Vallabh Angampally&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="space-x-6"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#about" class="hover:text-blue-500"&gt;About&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#projects" class="hover:text-blue-500"&gt;Projects&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#skills" class="hover:text-blue-500"&gt;Skills&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#experience" class="hover:text-blue-500"&gt;Experience&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#contact" class="hover:text-blue-500"&gt;Contact&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/nav&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Hero Section --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section id="hero" class="h-screen flex items-center justify-center relative" style="background-image: url('https://via.placeholder.com/1920x1080'); background-size: cover; background-position: center;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="absolute inset-0 bg-black opacity-50"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="relative z-10 text-center text-white px-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;img src="https://via.placeholder.com/150" alt="Profile Picture" class="mx-auto rounded-full border-4 border-white mb-4 w-32 h-32"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;h1 class="text-4xl md:text-5xl font-bold mb-2"&gt;Dr. Vishwa Vallabh Angampally&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="text-xl md:text-2xl mb-6"&gt;Bridging AI &amp; Medicine – Innovating Healthcare with Data Science&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="space-x-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="https://via.placeholder.com/your-resume.pdf" download class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded"&gt;Download Resume&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="https://linkedin.com/in/angampallyv" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded"&gt;Connect on LinkedIn&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#projects" class="bg-gray-600 hover:bg-gray-700 text-white px-6 py-2 rounded"&gt;View Projects&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- About Me Section --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section id="about" class="py-16 bg-gray-100"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container mx-auto px-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2 class="text-3xl font-bold text-center mb-8"&gt;About Me&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="max-w-3xl mx-auto text-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="mb-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>I am Dr. Vishwa Vallabh Angampally, currently pursuing an M.Sc in Health Informatics at Boston University (starting Jan 2025) and holding an MBBS from Gandhi Medical College &amp; Hospital (May 2023). My background combines clinical expertise with advanced data science and AI in medicine, enabling me to innovate healthcare solutions.</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="mb-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>Relevant Coursework includes Data Science and ML with Python, Advanced Health Informatics, Clinical Medicine, Biomedical Sciences, Health IT, and Ethical &amp; Legal issues in Health Informatics.</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>I specialize in leveraging AI to solve complex medical challenges, enhance patient care, and drive precision medicine.</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Projects Section --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section id="projects" class="py-16"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container mx-auto px-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2 class="text-3xl font-bold text-center mb-12"&gt;Projects Showcase&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Project Card 1: Efficient Diagnosis of AMD --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="bg-white shadow rounded overflow-hidden"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;img src="https://via.placeholder.com/400x200" alt="AMD Diagnosis" class="w-full h-48 object-cover"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="p-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3 class="text-xl font-bold mb-2"&gt;Efficient Diagnosis of AMD Using AI&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-sm mb-2"&gt;Technologies: ResNet-18, DenseNet-121, Harvard FairVision Dataset&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-gray-600 text-sm mb-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>Developed a deep learning pipeline achieving 89% accuracy and an AUC-ROC of 0.88.</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;details class="text-gray-700 text-sm"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;summary class="cursor-pointer font-medium hover:text-blue-600"&gt;Read More&lt;/summary&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;ul class="list-disc pl-5 mt-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Designed and implemented AI models using 2D fundus images, OCT scans, and demographic attributes.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Built a pipeline based on ResNet-18 with custom fully connected layers for 4-class classification: No AMD, Early AMD, Intermediate AMD, Advanced AMD.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Experimented with DenseNet-121, ResNet-50, and MobileNetV2; applied dropout (p=0.5) for regularization.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Conducted fairness analysis revealing racial disparities, with DenseNet-121 scoring 62.86% accuracy for Black patients.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Proposed data rebalancing and fairness-aware training; identified ResNet-18 as the optimal, equitable model with 84.4% accuracy for the lowest-performing group.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/details&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Project Card 2: Predictive Stock Analysis --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="bg-white shadow rounded overflow-hidden"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;img src="https://via.placeholder.com/400x200" alt="Stock Analysis" class="w-full h-48 object-cover"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="p-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3 class="text-xl font-bold mb-2"&gt;Predictive Stock Analysis &amp; Trading Strategies&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-sm mb-2"&gt;Technologies: TTWO Stock, k-NN, Decision Trees, SVM, Random Forest&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-gray-600 text-sm mb-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>Analyzed 5 years of stock data to develop predictive models and trading strategies.</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;details class="text-gray-700 text-sm"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;summary class="cursor-pointer font-medium hover:text-blue-600"&gt;Read More&lt;/summary&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;ul class="list-disc pl-5 mt-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Examined 5 years of TTWO stock data to extract trends, including weekday performance patterns.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Implemented k-NN, Decision Trees, Logistic Regression, and both Linear and Gaussian SVM models.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Achieved 77% accuracy and a portfolio value of $191.98 with Decision Trees, outperforming a buy-and-hold strategy starting from $100.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Utilized k-means clustering to classify weeks into "pure green" (92.31%) and "red" (96.97%) categories.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Demonstrated oracle-based strategies reaching up to $10,731, highlighting the strength of predictive analytics in trading.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/details&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Project Card 3: DNN Watermarking Robustness --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="bg-white shadow rounded overflow-hidden"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;img src="https://via.placeholder.com/400x200" alt="DNN Watermarking" class="w-full h-48 object-cover"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="p-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3 class="text-xl font-bold mb-2"&gt;Analysis of DNN Watermarking Robustness&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-sm mb-2"&gt;Technologies: Python, PyTorch, CIFAR-10, ImageNet&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-gray-600 text-sm mb-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>Evaluated 11 watermarking schemes against 29 removal attacks.</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;details class="text-gray-700 text-sm"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;summary class="cursor-pointer font-medium hover:text-blue-600"&gt;Read More&lt;/summary&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;ul class="list-disc pl-5 mt-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Conducted a graduate study on various DNN watermarking schemes using datasets such as CIFAR-10 and ImageNet.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Analyzed models including Wide ResNet, ResNet-50, and DenseNet-121.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Summarized key vulnerabilities and the impact of adaptive attacks using the Watermark-Robustness-Toolbox.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Provided insights critical for reproducible cybersecurity research in watermarking.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/details&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Project Card 4: Diabetic Retinopathy Screening --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="bg-white shadow rounded overflow-hidden"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;img src="https://via.placeholder.com/400x200" alt="Diabetic Retinopathy" class="w-full h-48 object-cover"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="p-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3 class="text-xl font-bold mb-2"&gt;Integration of AI/ML in Ophthalmic Imaging for Diabetic Retinopathy Screening&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-sm mb-2"&gt;Technologies: R, Statistical Analysis, Literature Review&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-gray-600 text-sm mb-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>Compared AI models against manual grading for diabetic retinopathy.</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;details class="text-gray-700 text-sm"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;summary class="cursor-pointer font-medium hover:text-blue-600"&gt;Read More&lt;/summary&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;ul class="list-disc pl-5 mt-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Conducted thorough literature reviews and comparative analyses.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Evaluated AI’s performance across diverse demographics.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Validated that AI models achieve sensitivity and specificity rates exceeding 95% and 90%, respectively.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Demonstrated the significant advantages of AI over traditional diagnostic methods.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/details&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Project Card 5: Influenza-Like Illness Patterns --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="bg-white shadow rounded overflow-hidden"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;img src="https://via.placeholder.com/400x200" alt="Influenza Patterns" class="w-full h-48 object-cover"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="p-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3 class="text-xl font-bold mb-2"&gt;Analysis of Influenza-Like Illness (ILI) Patterns&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-sm mb-2"&gt;Technologies: R, Data Cleaning, Statistical Visualization&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-gray-600 text-sm mb-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>Analyzed CDC data (1996–2024) to detect flu trends.</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;details class="text-gray-700 text-sm"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;summary class="cursor-pointer font-medium hover:text-blue-600"&gt;Read More&lt;/summary&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;ul class="list-disc pl-5 mt-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Utilized advanced statistical techniques for data cleaning and manipulation.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Identified peak ILI cases (868,590 in Week 52) and age-specific impacts.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Provided actionable insights into influenza trends to inform public health strategies.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/details&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Project Card 6: BU Parking Management System --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="bg-white shadow rounded overflow-hidden"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;img src="https://via.placeholder.com/400x200" alt="BU Parking" class="w-full h-48 object-cover"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="p-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3 class="text-xl font-bold mb-2"&gt;BU Parking Management System&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-sm mb-2"&gt;Technologies: UML, Feasibility Studies, Database Architecture&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-gray-600 text-sm mb-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>Designed a scalable parking system for Boston University.</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;details class="text-gray-700 text-sm"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;summary class="cursor-pointer font-medium hover:text-blue-600"&gt;Read More&lt;/summary&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;ul class="list-disc pl-5 mt-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Utilized object-oriented methods and UML diagrams to model the system.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Conducted feasibility studies to optimize real-time accessibility and flexible payment options.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Projected an ROI of 794.49% over 5 years with a break-even point of 1.32 years.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/details&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Project Card 7: Pediatric Management Module Integration --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="bg-white shadow rounded overflow-hidden"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;img src="https://via.placeholder.com/400x200" alt="Pediatric Module" class="w-full h-48 object-cover"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="p-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3 class="text-xl font-bold mb-2"&gt;Pediatric Management Module Integration&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-sm mb-2"&gt;Technologies: Algorithm Design, HL7, FHIR Standards&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-gray-600 text-sm mb-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>Developed an algorithm for managing chronic diarrhea in children.</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;details class="text-gray-700 text-sm"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;summary class="cursor-pointer font-medium hover:text-blue-600"&gt;Read More&lt;/summary&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;ul class="list-disc pl-5 mt-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Designed a module ensuring seamless data integration across healthcare systems.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Enhanced diagnostic accuracy and treatment efficacy through evidence-based practices.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Ensured compliance with HL7 and FHIR standards.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/details&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Project Card 8: Diabetes and Vital Monitoring System --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="bg-white shadow rounded overflow-hidden"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;img src="https://via.placeholder.com/400x200" alt="Diabetes Monitoring" class="w-full h-48 object-cover"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="p-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3 class="text-xl font-bold mb-2"&gt;Diabetes and Vital Monitoring System&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-sm mb-2"&gt;Technologies: Python, Health Metrics Analysis&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-gray-600 text-sm mb-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>Developed a Python application for real-time health monitoring.</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;details class="text-gray-700 text-sm"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;summary class="cursor-pointer font-medium hover:text-blue-600"&gt;Read More&lt;/summary&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;ul class="list-disc pl-5 mt-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Monitored and analyzed glucose, ketone levels, heart rate, and blood pressure.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Integrated real-time alerts for diabetic ketoacidosis (DKA) risks.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Provided a user-friendly solution for tracking vital metrics and personalized health advice.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/details&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Project Card 9: Ethical Analysis of AI in Medicine --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="bg-white shadow rounded overflow-hidden"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;img src="https://via.placeholder.com/400x200" alt="Ethical Analysis" class="w-full h-48 object-cover"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="p-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3 class="text-xl font-bold mb-2"&gt;Ethical Analysis of AI in Medicine &amp; Ophthalmology&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-sm mb-2"&gt;Technologies: AI Ethics, Policy Development&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-gray-600 text-sm mb-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>Explored ethical challenges in AI implementation for healthcare.</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;details class="text-gray-700 text-sm"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;summary class="cursor-pointer font-medium hover:text-blue-600"&gt;Read More&lt;/summary&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;ul class="list-disc pl-5 mt-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Analyzed issues of data privacy, transparency, and bias in AI systems.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Proposed actionable guidelines for ethical AI integration in medicine and ophthalmology.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Supported informed policy-making to reduce AI-related ethical risks.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/details&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Skills Section --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section id="skills" class="py-16 bg-gray-100"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container mx-auto px-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2 class="text-3xl font-bold text-center mb-8"&gt;Skills &amp; Technologies&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="flex flex-col items-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;img src="https://via.placeholder.com/64" alt="Python" class="mb-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="text-sm"&gt;Python&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="flex flex-col items-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;img src="https://via.placeholder.com/64" alt="Java" class="mb-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="text-sm"&gt;Java&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="flex flex-col items-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;img src="https://via.placeholder.com/64" alt="R" class="mb-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="text-sm"&gt;R&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="flex flex-col items-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;img src="https://via.placeholder.com/64" alt="SQL" class="mb-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="text-sm"&gt;SQL&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="flex flex-col items-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;img src="https://via.placeholder.com/64" alt="TensorFlow" class="mb-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="text-sm"&gt;TensorFlow&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="flex flex-col items-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;img src="https://via.placeholder.com/64" alt="PyTorch" class="mb-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="text-sm"&gt;PyTorch&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="flex flex-col items-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;img src="https://via.placeholder.com/64" alt="Git" class="mb-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="text-sm"&gt;Git&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="flex flex-col items-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;img src="https://via.placeholder.com/64" alt="Tableau" class="mb-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="text-sm"&gt;Tableau&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Work Experience Section --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section id="experience" class="py-16"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container mx-auto px-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2 class="text-3xl font-bold text-center mb-8"&gt;Work Experience&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="space-y-8 max-w-3xl mx-auto"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Research Assistant --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3 class="text-xl font-bold"&gt;Research Assistant - Boston University – Department of Computer Science&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="text-sm text-gray-600"&gt;Boston, MA | Sep 2024 - Present&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;ul class="list-disc list-inside mt-2 text-sm text-gray-700"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Evaluated the impact of label noise on ML models using datasets like MIMIC IV, TCGA, and UCI Stroke Perdition.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Designed experiments with varying label noise (0%-40%) and tested multiple models (Random Forest, Logistic Regression, SVM, KNN, Naïve Bayes).&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Demonstrated that ensemble methods falter under noise while simpler models maintain balanced sensitivity.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Tele-Rotation --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3 class="text-xl font-bold"&gt;Tele-Rotation - Oncology Department, Lakeland Regional Health&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="text-sm text-gray-600"&gt;Jan 2021 - Dec 2022&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;ul class="list-disc list-inside mt-2 text-sm text-gray-700"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Supported precision medicine initiatives by evaluating patient cases during Tumor Board reviews.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Assisted in implementing targeted therapies to improve patient outcomes.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Doctor Intern --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3 class="text-xl font-bold"&gt;Doctor Intern – Gandhi Medical Hospital, Hyderabad, IND&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="text-sm text-gray-600"&gt;Dec 2019 - Mar 2022&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;ul class="list-disc list-inside mt-2 text-sm text-gray-700"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Conducted bedside research on postpartum practices to improve postnatal care outcomes.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Administered critical care and diagnostics at a major COVID-19 treatment center.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Led crisis response efforts, optimizing care and cross-department coordination.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Contact Section --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section id="contact" class="py-16 bg-gray-100"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container mx-auto px-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2 class="text-3xl font-bold text-center mb-8"&gt;Get in Touch&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="max-w-xl mx-auto"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;form action="https://formspree.io/f/yourFormID" method="POST" class="space-y-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="name" class="block text-sm font-medium text-gray-700"&gt;Name&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="text" id="name" name="name" required class="mt-1 block w-full border border-gray-300 rounded py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="email" class="block text-sm font-medium text-gray-700"&gt;Email&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="email" id="email" name="_replyto" required class="mt-1 block w-full border border-gray-300 rounded py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="message" class="block text-sm font-medium text-gray-700"&gt;Message&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;textarea id="message" name="message" rows="4" required class="mt-1 block w-full border border-gray-300 rounded py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500"&gt;&lt;/textarea&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded"&gt;Send Message&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/form&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Footer --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;footer class="bg-white py-6"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container mx-auto px-4 text-center text-gray-600"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;&amp;copy; 2025 Dr. Vishwa Vallabh Angampally. All rights reserved.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/footer&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Dr. Vishwa Vallabh Angampally</h1>
+    <p>Boston, MA</p>
+    <p>Contact: <a href="mailto:angampallyv@gmail.com">angampallyv@gmail.com</a> | 
+    <a href="tel:+17812309150">+1 (781) 230-9150</a></p>
+    <p>
+      <a href="https://www.linkedin.com/in/angampallyv" target="_blank">LinkedIn</a> 
+      <!-- Add any other social or personal links here -->
+    </p>
+  </header>
+
+  <!-- NAVIGATION LINKS -->
+  <nav>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#about">About</a>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+
+      <!-- PROJECT 1 -->
+      <details>
+        <summary>Efficient Diagnosis of Age-Related Macular Degeneration (AMD) Using AI</summary>
+        <p><strong>Technologies:</strong> ResNet-18, DenseNet-121, Harvard FairVision Dataset</p>
+        <ul>
+          <li>Designed and implemented AI models for diagnosing AMD using the Harvard FairVision Dataset (2D fundus images, OCT scans, demographic attributes).</li>
+          <li>Developed a Deep Learning pipeline with ResNet-18 for 4-class classification achieving <strong>89% accuracy</strong> and an <strong>AUC-ROC of 0.88</strong>.</li>
+          <li>Experimented with DenseNet-121, ResNet-50, MobileNetV2. Conducted fairness analysis revealing racial disparities (Black patients: 62.86% accuracy with DenseNet-121), demonstrating underrepresentation issues.</li>
+          <li>Proposed fairness-aware training techniques. Identified ResNet-18 as most accurate and fair, achieving <strong>84.4% accuracy</strong> for the lowest-performing group.</li>
+        </ul>
+      </details>
+
+      <!-- PROJECT 2 -->
+      <details>
+        <summary>Predictive Stock Analysis and Trading Strategies</summary>
+        <p><strong>Technologies:</strong> TTWO Stock, k-NN, Decision Trees, SVM, Random Forest</p>
+        <ul>
+          <li>Analyzed 5 years of TTWO stock data to develop predictive models and identify weekday performance patterns (e.g., Fridays negative returns, Wednesdays stronger returns).</li>
+          <li>Implemented k-NN, Decision Trees, Logistic Regression, and SVM achieving <strong>77% accuracy</strong>. Decision Trees outperformed buy-and-hold, growing an initial $100 to <strong>$191.98</strong> vs. $152.91.</li>
+          <li>Used k-means clustering to classify weeks into pure green (92.31%) or red (96.97%), demonstrating oracle-based strategies reaching <strong>$10,731</strong>.</li>
+        </ul>
+      </details>
+
+      <!-- PROJECT 3 -->
+      <details>
+        <summary>Analysis of DNN Watermarking Robustness</summary>
+        <p><strong>Technologies:</strong> Python, PyTorch, CIFAR-10, ImageNet, Watermark-Robustness-Toolbox</p>
+        <ul>
+          <li>Graduate-level research evaluating 11 DNN watermarking schemes against 29 removal attacks.</li>
+          <li>Analyzed datasets like CIFAR-10, ImageNet with models (Wide ResNet, ResNet-50, DenseNet-121).</li>
+          <li>Highlighted vulnerabilities in watermarking methods and the role of adaptive attacks for reproducible cybersecurity research.</li>
+        </ul>
+      </details>
+
+      <!-- PROJECT 4 -->
+      <details>
+        <summary>Integration of AI/ML in Ophthalmic Imaging for Diabetic Retinopathy Screening</summary>
+        <p><strong>Technologies:</strong> R, Statistical Analysis, Literature Review</p>
+        <ul>
+          <li>Conducted literature reviews and comparative analyses of AI models vs. manual grading systems for diabetic retinopathy screening.</li>
+          <li>Confirmed AI’s superiority with sensitivity and specificity rates exceeding 95% and 90%, respectively.</li>
+        </ul>
+      </details>
+
+      <!-- PROJECT 5 -->
+      <details>
+        <summary>Analysis of Influenza-Like Illness (ILI) Patterns</summary>
+        <p><strong>Technologies:</strong> R, Data Cleaning, Statistical Visualization</p>
+        <ul>
+          <li>Analyzed CDC data (1996–2024) for influenza-like illness trends.</li>
+          <li>Identified peak ILI cases (868,590 in Week 52), significant impacts on individuals aged 5–24, providing actionable insights.</li>
+        </ul>
+      </details>
+
+      <!-- PROJECT 6 -->
+      <details>
+        <summary>BU Parking Management System</summary>
+        <p><strong>Technologies:</strong> UML, Feasibility Studies, Database Architecture</p>
+        <ul>
+          <li>Designed a scalable parking management system using object-oriented methods, UML diagrams, and feasibility studies.</li>
+          <li>Improved real-time accessibility and flexible payment options at Boston University with a projected ROI of 794.49% over 5 years.</li>
+        </ul>
+      </details>
+
+      <!-- PROJECT 7 -->
+      <details>
+        <summary>Pediatric Management Module Integration</summary>
+        <p><strong>Technologies:</strong> Algorithm Design, HL7, FHIR Standards</p>
+        <ul>
+          <li>Created a Pediatric Management Module to diagnose and manage chronic diarrhea in children.</li>
+          <li>Ensured seamless data integration across healthcare systems, enhancing diagnostic accuracy and treatment efficacy.</li>
+        </ul>
+      </details>
+
+      <!-- PROJECT 8 -->
+      <details>
+        <summary>Diabetes and Vital Monitoring System</summary>
+        <p><strong>Technologies:</strong> Python, Health Metrics Analysis</p>
+        <ul>
+          <li>Developed a Python-based application to monitor glucose, ketone levels, heart rate, and blood pressure.</li>
+          <li>Integrated real-time alerts for DKA risks, providing personalized health advice.</li>
+        </ul>
+      </details>
+
+      <!-- PROJECT 9 -->
+      <details>
+        <summary>Ethical Analysis of AI in Medicine and Ophthalmology</summary>
+        <p><strong>Technologies:</strong> AI Ethics, Policy Development</p>
+        <ul>
+          <li>Analyzed ethical challenges: data privacy, transparency, bias, and mitigation strategies in medicine and ophthalmology.</li>
+          <li>Developed actionable guidelines for ethical AI integration, informing policy-making and reducing AI-related ethical risks.</li>
+        </ul>
+      </details>
+    </section>
+
+
+    <!-- RESUME SECTION -->
+    <section id="resume">
+      <h2 class="section-title">Resume</h2>
+      <p><strong>Name:</strong> Dr. Vishwa Vallabh Angampally</p>
+      <p><strong>Contact:</strong> +1 (781) 230-9150 | <a href="mailto:angampallyv@gmail.com">angampallyv@gmail.com</a> | 
+        <a href="https://www.linkedin.com/in/angampallyv" target="_blank">LinkedIn</a> | Boston, MA</p>
+
+      <h3>Education</h3>
+      <ul>
+        <li><strong>Boston University:</strong> M.Sc in Health Informatics (Jan 2025)</li>
+        <li><strong>Gandhi Medical College and Hospital:</strong> MBBS (May 2023)</li>
+        <li><strong>Relevant Coursework:</strong> Data Science and ML with Python, Advanced Health Informatics, Clinical Medicine, Biomedical Sciences, Health IT, Cybersecurity</li>
+      </ul>
+
+      <h3>Technical Skills</h3>
+      <ul>
+        <li><strong>Languages/Tools:</strong> Python, Java, R, SQL, Scikit-learn, NumPy, Pandas, TensorFlow, PyTorch, Linux, Git, Tableau, MySQL</li>
+        <li><strong>Domain Skills:</strong> Health IT, Planning, Computer Vision, Machine Learning, Deep Learning, Statistical Modeling, Data Visualization, Image Processing</li>
+        <li><strong>Other Skills/Certifications:</strong> Cross-Functional Collaboration, MS Office Suite, Telangana State Medical License, BLS (AHA), R Studio, Human Subject Protection Training</li>
+      </ul>
+
+      <h3>Work Experience</h3>
+      <ul>
+        <li><strong>Research Assistant - Boston University, Dept. of Computer Science (Sep 2024 - Present)</strong>
+          <ul>
+            <li>Research under Dr. Eugene Pinsky on label noise in medical datasets (MIMIC IV, TCGS, UCI Stroke).</li>
+            <li>Tested models (Random Forest, Logistic Regression, Decision Tree, SVM, KNN, Naïve Bayes).</li>
+            <li>Demonstrated Random Forest's robustness, achieving 20% higher F1 scores for stroke/sepsis/heart disease/diabetes predictions.</li>
+          </ul>
+        </li>
+        <li><strong>Tele-Rotation - Oncology Department, Lakeland Regional Health (Jan 2021 - Dec 2022)</strong>
+          <ul>
+            <li>Managed precision medicine initiatives, participated in tumor board reviews, and developed personalized treatment plans.</li>
+          </ul>
+        </li>
+        <li><strong>Doctor Intern - Gandhi Medical Hospital, Hyderabad (Dec 2019 - Mar 2022)</strong>
+          <ul>
+            <li>Contributed to COVID-19 critical care, managed crisis responses, coordinated cross-departmental care.</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ABOUT OR OTHER SECTIONS -->
+    <section id="about">
+      <h2 class="section-title">About</h2>
+      <p>
+        Hello! I’m Dr. Vishwa Vallabh Angampally, a passionate medical professional and health informatics enthusiast. 
+        I specialize in leveraging AI/ML technologies for better patient care. 
+        I’m always looking to collaborate on innovative healthcare solutions. 
+      </p>
+      <!-- Customize this about section as you see fit -->
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 - Dr. Vishwa Vallabh Angampally</p>
+    <!-- Add social media or any other relevant footer links -->
+  </footer>
+
 </body>
 </html>
