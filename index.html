@@ -4,13 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Portfolio of Dr. Vishwa Vallabh Angampally - Bridging AI & Medicine with Data Science" />
-  
-  <!-- Replace og:image with your new link if desired -->
   <meta property="og:title" content="Dr. Vishwa Vallabh Angampally Portfolio" />
   <meta property="og:description" content="Showcasing projects in AI, Healthcare, Data Science, and more." />
-  <meta property="og:image" content="https://github.com/vvangam/vvangam.github.io/blob/main/Profile%20picture.jpg" />
-  <meta property="og:url" content="https://your-username.github.io/your-repo-name/" />
-
+  <!-- Replace the og:image with your background image or any other representative image -->
+  <meta property="og:image" content="https://raw.githubusercontent.com/vvangam/vvangam.github.io/main/Backgroung%20images.jpg?raw=true" />
+  <meta property="og:url" content="https://vvangam.github.io/" />
   <title>Dr. Vishwa Vallabh Angampally | Portfolio</title>
   
   <!-- Tailwind CSS via CDN -->
@@ -32,7 +30,8 @@
         <button id="mobile-menu-button" class="focus:outline-none">
           <!-- Hamburger Icon -->
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                  d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
         </button>
       </div>
@@ -48,43 +47,33 @@
   </nav>
 
   <!-- Hero Section -->
-  <section
-    id="hero"
-    class="h-screen flex items-center justify-center relative"
-    style="
-      background-image: url('https://github.com/vvangam/vvangam.github.io/blob/main/Backgroung%20images.jpg');
-      background-size: cover;
-      background-position: center;
-    "
-  >
+  <section id="hero" class="h-screen flex items-center justify-center relative" 
+           style="background-image: url('https://raw.githubusercontent.com/vvangam/vvangam.github.io/main/Backgroung%20images.jpg?raw=true'); background-size: cover; background-position: center;">
     <div class="absolute inset-0 bg-black opacity-50"></div>
     <div class="relative z-10 text-center text-white px-4">
-      <img
-        src="https://github.com/vvangam/vvangam.github.io/blob/main/Profile%20picture.jpg"
-        alt="Profile Picture"
-        class="mx-auto rounded-full border-4 border-white mb-4 w-32 h-32"
+      <img 
+        src="https://raw.githubusercontent.com/vvangam/vvangam.github.io/main/Profile%20picture.jpg?raw=true"
+        alt="Profile Picture" 
+        class="mx-auto rounded-full border-4 border-white mb-4 w-32 h-32" 
       />
       <h1 class="text-4xl md:text-5xl font-bold mb-2">Dr. Vishwa Vallabh Angampally</h1>
       <p class="text-xl md:text-2xl mb-6">Bridging AI & Medicine – Innovating Healthcare with Data Science</p>
       <div class="space-x-4">
-        <a
-          href="https://drive.google.com/file/d/1oFd95QnfZYAYbRwCRK7QalWWfjS6pyoA/view?usp=share_link"
-          download
+        <a 
+          href="https://drive.google.com/file/d/1oFd95QnfZYAYbRwCRK7QalWWfjS6pyoA/view?usp=share_link" 
+          download 
           class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded"
         >
           Download Resume
         </a>
-        <a
-          href="https://linkedin.com/in/angampallyv"
-          target="_blank"
+        <a 
+          href="https://linkedin.com/in/angampallyv" 
+          target="_blank" 
           class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded"
         >
           Connect on LinkedIn
         </a>
-        <a
-          href="#projects"
-          class="bg-gray-600 hover:bg-gray-700 text-white px-6 py-2 rounded"
-        >
+        <a href="#projects" class="bg-gray-600 hover:bg-gray-700 text-white px-6 py-2 rounded">
           View Projects
         </a>
       </div>
@@ -119,10 +108,10 @@
       <div class="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <!-- Project Card 1: Efficient Diagnosis of AMD Using AI -->
         <div class="bg-white shadow rounded overflow-hidden">
-          <img
-            src="https://github.com/vvangam/vvangam.github.io/blob/main/Al%20Model%20for%20AMD.png"
-            alt="Efficient Diagnosis of AMD Using AI"
-            class="w-full h-48 object-cover"
+          <img 
+            src="https://raw.githubusercontent.com/vvangam/vvangam.github.io/main/Al%20Model%20for%20AMD.png?raw=true"
+            alt="Efficient Diagnosis of AMD Using AI" 
+            class="w-full h-48 object-cover" 
           />
           <div class="p-4">
             <h3 class="text-xl font-bold mb-2">Efficient Diagnosis of AMD Using AI</h3>
@@ -132,13 +121,13 @@
               <ul class="list-disc pl-5 mt-2">
                 <li>Designed and implemented AI models using 2D fundus images, OCT scans, and demographic attributes.</li>
                 <li>Developed a deep learning pipeline with ResNet-18 as the base model for 4-class classification (No AMD, Early AMD, Intermediate AMD, Advanced AMD) achieving 89% accuracy and an AUC-ROC of 0.88.</li>
-                <li>Experimented with DenseNet-121, ResNet-50, and MobileNetV2; applied dropout (p=0.5) to reduce overfitting and conducted fairness analysis showing only 62.86% accuracy for Black patients with DenseNet-121.</li>
+                <li>Experimented with DenseNet-121, ResNet-50, and MobileNetV2; applied dropout (p=0.5) to reduce overfitting and conducted fairness analysis showing only 62.86% accuracy for Black patients.</li>
                 <li>Proposed data rebalancing and fairness-aware training, identifying ResNet-18 as the most equitable model with 84.4% accuracy for the lowest-performing group.</li>
               </ul>
             </details>
-            <a
-              href="https://docs.google.com/presentation/d/1qMhpdHpBvojJRy8UinVpQtmZiu7N6ZCtpgCvRvwG6GI/edit?usp=sharing"
-              target="_blank"
+            <a 
+              href="https://docs.google.com/presentation/d/1qMhpdHpBvojJRy8UinVpQtmZiu7N6ZCtpgCvRvwG6GI/edit?usp=sharing" 
+              target="_blank" 
               class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded inline-block mt-4"
             >
               View Project
@@ -148,10 +137,10 @@
 
         <!-- Project Card 2: Predictive Stock Analysis & Trading Strategies -->
         <div class="bg-white shadow rounded overflow-hidden">
-          <img
-            src="https://github.com/vvangam/vvangam.github.io/blob/main/Trading%20analysis.webp"
-            alt="Predictive Stock Analysis"
-            class="w-full h-48 object-cover"
+          <img 
+            src="https://raw.githubusercontent.com/vvangam/vvangam.github.io/main/Trading%20analysis.webp?raw=true"
+            alt="Predictive Stock Analysis" 
+            class="w-full h-48 object-cover" 
           />
           <div class="p-4">
             <h3 class="text-xl font-bold mb-2">Predictive Stock Analysis & Trading Strategies</h3>
@@ -164,9 +153,9 @@
                 <li>Leveraged k-means clustering to classify weeks into pure green (92.31%) and red (96.97%) categories, and demonstrated oracle-based strategies reaching up to $10,731.</li>
               </ul>
             </details>
-            <a
-              href="https://example.com/predictive-stock-analysis"
-              target="_blank"
+            <a 
+              href="https://example.com/predictive-stock-analysis" 
+              target="_blank" 
               class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded inline-block mt-4"
             >
               View Project
@@ -176,10 +165,10 @@
 
         <!-- Project Card 3: Analysis of DNN Watermarking Robustness -->
         <div class="bg-white shadow rounded overflow-hidden">
-          <img
-            src="https://github.com/vvangam/vvangam.github.io/blob/main/DNN%20watermarking.png"
-            alt="DNN Watermarking Robustness"
-            class="w-full h-48 object-cover"
+          <img 
+            src="https://raw.githubusercontent.com/vvangam/vvangam.github.io/main/DNN%20watermarking.png?raw=true"
+            alt="DNN Watermarking Robustness" 
+            class="w-full h-48 object-cover" 
           />
           <div class="p-4">
             <h3 class="text-xl font-bold mb-2">Analysis of DNN Watermarking Robustness</h3>
@@ -189,12 +178,12 @@
               <ul class="list-disc pl-5 mt-2">
                 <li>Conducted a graduate study evaluating 11 DNN watermarking schemes against 29 removal attacks using datasets like CIFAR-10 and ImageNet.</li>
                 <li>Analyzed models such as Wide ResNet, ResNet-50, and DenseNet-121, summarizing vulnerabilities and the impact of adaptive attacks.</li>
-                <li>Emphasized the role of the Watermark-Robustness-Toolbox for reproducible cybersecurity research.</li>
+                <li>Emphasized the role of a Watermark-Robustness-Toolbox for reproducible cybersecurity research.</li>
               </ul>
             </details>
-            <a
-              href="https://docs.google.com/presentation/d/1oP7FQvYKF7UobLZPlUPXqBfG3gLtBJgq5KCFFLybo90/edit?usp=sharing"
-              target="_blank"
+            <a 
+              href="https://docs.google.com/presentation/d/1oP7FQvYKF7UobLZPlUPXqBfG3gLtBJgq5KCFFLybo90/edit?usp=sharing" 
+              target="_blank" 
               class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded inline-block mt-4"
             >
               View Project
@@ -203,12 +192,12 @@
         </div>
 
         <!-- Project Card 4: Integration of AI/ML in Ophthalmic Imaging for Diabetic Retinopathy Screening -->
-        <!-- No matching new link was provided for this exact project; keeping the original for now. -->
         <div class="bg-white shadow rounded overflow-hidden">
-          <img
-            src="https://drive.google.com/thumbnail?id=1FtB5VPRskb-UXWgEUirbP44LjztwWbW4"
-            alt="Diabetic Retinopathy Screening"
-            class="w-full h-48 object-cover"
+          <!-- If you have a specific file for DR screening, replace this link. Otherwise, keep as is or use any placeholder. -->
+          <img 
+            src="https://raw.githubusercontent.com/vvangam/vvangam.github.io/main/Ethical%20consideration%20of%20AI%20in%20Opthalmic%20Imaging.png?raw=true"
+            alt="Diabetic Retinopathy Screening" 
+            class="w-full h-48 object-cover" 
           />
           <div class="p-4">
             <h3 class="text-xl font-bold mb-2">Integration of AI/ML in Ophthalmic Imaging for Diabetic Retinopathy Screening</h3>
@@ -220,9 +209,9 @@
                 <li>Confirmed that AI models achieve sensitivity and specificity rates exceeding 95% and 90%, respectively, outperforming traditional methods.</li>
               </ul>
             </details>
-            <a
-              href="https://drive.google.com/file/d/1FtB5VPRskb-UXWgEUirbP44LjztwWbW4/view?usp=sharing"
-              target="_blank"
+            <a 
+              href="https://drive.google.com/file/d/1FtB5VPRskb-UXWgEUirbP44LjztwWbW4/view?usp=sharing" 
+              target="_blank" 
               class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded inline-block mt-4"
             >
               View Project
@@ -232,10 +221,10 @@
 
         <!-- Project Card 5: Analysis of Influenza-Like Illness (ILI) Patterns -->
         <div class="bg-white shadow rounded overflow-hidden">
-          <img
-            src="https://github.com/vvangam/vvangam.github.io/blob/main/ILI%20ANALYSIS.webp"
-            alt="ILI Patterns Analysis"
-            class="w-full h-48 object-cover"
+          <img 
+            src="https://raw.githubusercontent.com/vvangam/vvangam.github.io/main/ILI%20ANALYSIS.webp?raw=true"
+            alt="ILI Patterns Analysis" 
+            class="w-full h-48 object-cover" 
           />
           <div class="p-4">
             <h3 class="text-xl font-bold mb-2">Analysis of Influenza-Like Illness (ILI) Patterns</h3>
@@ -247,9 +236,9 @@
                 <li>Identified peak ILI cases (868,590 in Week 52) and significant impacts on individuals aged 5–24, providing actionable public health insights.</li>
               </ul>
             </details>
-            <a
-              href="https://example.com/ili-analysis"
-              target="_blank"
+            <a 
+              href="https://example.com/ili-analysis" 
+              target="_blank" 
               class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded inline-block mt-4"
             >
               View Project
@@ -259,10 +248,10 @@
 
         <!-- Project Card 6: BU Parking Management System (Terrier Parking BU) -->
         <div class="bg-white shadow rounded overflow-hidden">
-          <img
-            src="https://github.com/vvangam/vvangam.github.io/blob/main/Terrier%20Parking%20BU.png"
-            alt="BU Parking Management System"
-            class="w-full h-48 object-cover"
+          <img 
+            src="https://raw.githubusercontent.com/vvangam/vvangam.github.io/main/Terrier%20Parking%20BU.png?raw=true"
+            alt="BU Parking Management System" 
+            class="w-full h-48 object-cover" 
           />
           <div class="p-4">
             <h3 class="text-xl font-bold mb-2">BU Parking Management System</h3>
@@ -274,9 +263,9 @@
                 <li>Conducted feasibility studies to optimize real-time accessibility and flexible payment options, with a projected ROI of 794.49% over 5 years and a break-even point of 1.32 years.</li>
               </ul>
             </details>
-            <a
-              href="https://docs.google.com/presentation/d/1voIP4Vt8-Q_1qySQCxq6FxF_eVlVobyWFH-lK7mqtkg/edit?usp=sharing"
-              target="_blank"
+            <a 
+              href="https://docs.google.com/presentation/d/1voIP4Vt8-Q_1qySQCxq6FxF_eVlVobyWFH-lK7mqtkg/edit?usp=sharing" 
+              target="_blank" 
               class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded inline-block mt-4"
             >
               View Project
@@ -286,10 +275,10 @@
 
         <!-- Project Card 7: Pediatric Management Module Integration -->
         <div class="bg-white shadow rounded overflow-hidden">
-          <img
-            src="https://github.com/vvangam/vvangam.github.io/blob/main/Pediatric%20Management%20Module.png"
-            alt="Pediatric Management Module Integration"
-            class="w-full h-48 object-cover"
+          <img 
+            src="https://raw.githubusercontent.com/vvangam/vvangam.github.io/main/Pediatric%20Management%20Module.png?raw=true"
+            alt="Pediatric Management Module Integration" 
+            class="w-full h-48 object-cover" 
           />
           <div class="p-4">
             <h3 class="text-xl font-bold mb-2">Pediatric Management Module Integration</h3>
@@ -302,9 +291,9 @@
                 <li>Promoted compliance with HL7 and FHIR standards.</li>
               </ul>
             </details>
-            <a
-              href="https://docs.google.com/presentation/d/1hE-O_QDPvFH4NSohDWURZ6E_x75nXOUY/edit?usp=sharing"
-              target="_blank"
+            <a 
+              href="https://docs.google.com/presentation/d/1hE-O_QDPvFH4NSohDWURZ6E_x75nXOUY/edit?usp=sharing" 
+              target="_blank" 
               class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded inline-block mt-4"
             >
               View Project
@@ -314,10 +303,10 @@
 
         <!-- Project Card 8: Diabetes and Vital Monitoring System -->
         <div class="bg-white shadow rounded overflow-hidden">
-          <img
-            src="https://github.com/vvangam/vvangam.github.io/blob/main/Diabetes%20monitoring%20system.png"
-            alt="Diabetes and Vital Monitoring System"
-            class="w-full h-48 object-cover"
+          <img 
+            src="https://raw.githubusercontent.com/vvangam/vvangam.github.io/main/Diabetes%20monitoring%20system.png?raw=true"
+            alt="Diabetes and Vital Monitoring System" 
+            class="w-full h-48 object-cover" 
           />
           <div class="p-4">
             <h3 class="text-xl font-bold mb-2">Diabetes and Vital Monitoring System</h3>
@@ -329,9 +318,9 @@
                 <li>Integrated alerts for diabetic ketoacidosis (DKA) risks, providing a user-friendly solution for tracking vital metrics and offering personalized health advice.</li>
               </ul>
             </details>
-            <a
-              href="https://docs.google.com/presentation/d/1gMgzqLgygUzNWPLBDvq1tDClB3sJZmQ99uGq5zbYDPo/edit?usp=sharing"
-              target="_blank"
+            <a 
+              href="https://docs.google.com/presentation/d/1gMgzqLgygUzNWPLBDvq1tDClB3sJZmQ99uGq5zbYDPo/edit?usp=sharing" 
+              target="_blank" 
               class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded inline-block mt-4"
             >
               View Project
@@ -341,10 +330,10 @@
 
         <!-- Project Card 9: Ethical Analysis of AI in Medicine & Ophthalmology -->
         <div class="bg-white shadow rounded overflow-hidden">
-          <img
-            src="https://github.com/vvangam/vvangam.github.io/blob/main/Ethical%20consideration%20of%20AI%20in%20Opthalmic%20Imaging.png"
-            alt="Ethical Analysis of AI in Medicine"
-            class="w-full h-48 object-cover"
+          <img 
+            src="https://raw.githubusercontent.com/vvangam/vvangam.github.io/main/Ethical%20consideration%20of%20AI%20in%20Opthalmic%20Imaging.png?raw=true"
+            alt="Ethical Analysis of AI in Medicine" 
+            class="w-full h-48 object-cover" 
           />
           <div class="p-4">
             <h3 class="text-xl font-bold mb-2">Ethical Analysis of AI in Medicine & Ophthalmology</h3>
@@ -356,9 +345,9 @@
                 <li>Developed actionable guidelines for ethical AI integration, supporting informed policy-making and reducing ethical risks in healthcare.</li>
               </ul>
             </details>
-            <a
-              href="https://docs.google.com/presentation/d/1-9RUaqJRBUqUWiqAGLUmXUAgWpEA4GUX/edit?usp=sharing"
-              target="_blank"
+            <a 
+              href="https://docs.google.com/presentation/d/1-9RUaqJRBUqUWiqAGLUmXUAgWpEA4GUX/edit?usp=sharing" 
+              target="_blank" 
               class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded inline-block mt-4"
             >
               View Project
@@ -368,10 +357,10 @@
 
         <!-- Project Card 10: Virginia Women’s Center EHR Deployment -->
         <div class="bg-white shadow rounded overflow-hidden">
-          <img
-            src="https://github.com/vvangam/vvangam.github.io/blob/main/VWC%20EHR%20deployment.png"
-            alt="Virginia Women’s Center EHR Deployment"
-            class="w-full h-48 object-cover"
+          <img 
+            src="https://raw.githubusercontent.com/vvangam/vvangam.github.io/main/VWC%20EHR%20deployment.png?raw=true"
+            alt="Virginia Women’s Center EHR Deployment" 
+            class="w-full h-48 object-cover" 
           />
           <div class="p-4">
             <h3 class="text-xl font-bold mb-2">Virginia Women’s Center EHR Deployment – Project Report & Presentation</h3>
@@ -385,9 +374,9 @@
                 <li>Facilitated cross-functional collaboration and designed a phased go-live approach with comprehensive training and 24/7 technical support.</li>
               </ul>
             </details>
-            <a
-              href="https://example.com/virginia-womens-center-ehr"
-              target="_blank"
+            <a 
+              href="https://example.com/virginia-womens-center-ehr" 
+              target="_blank" 
               class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded inline-block mt-4"
             >
               View Project
@@ -474,41 +463,44 @@
     <div class="container mx-auto px-4">
       <h2 class="text-3xl font-bold text-center mb-8">Get in Touch</h2>
       <div class="max-w-xl mx-auto">
+        <!-- Update your Formspree link below if you have a different form ID -->
         <form action="https://formspree.io/f/yourFormID" method="POST" class="space-y-4">
           <div>
             <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              required
-              class="mt-1 block w-full border border-gray-300 rounded py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+            <input 
+              type="text" 
+              id="name" 
+              name="name" 
+              required 
+              class="mt-1 block w-full border border-gray-300 rounded py-2 px-3 
+                     focus:outline-none focus:ring-blue-500 focus:border-blue-500" 
             />
           </div>
           <div>
             <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="_replyto"
-              required
-              class="mt-1 block w-full border border-gray-300 rounded py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+            <input 
+              type="email" 
+              id="email" 
+              name="_replyto" 
+              required 
+              class="mt-1 block w-full border border-gray-300 rounded py-2 px-3 
+                     focus:outline-none focus:ring-blue-500 focus:border-blue-500" 
             />
           </div>
           <div>
             <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="4"
-              required
-              class="mt-1 block w-full border border-gray-300 rounded py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-            ></textarea>
+            <textarea 
+              id="message" 
+              name="message" 
+              rows="4" 
+              required 
+              class="mt-1 block w-full border border-gray-300 rounded py-2 px-3 
+                     focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+            </textarea>
           </div>
-          <button
-            type="submit"
-            class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded"
-          >
+          <button 
+            type="submit" 
+            class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded">
             Send Message
           </button>
         </form>
