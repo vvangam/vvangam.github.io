@@ -92,7 +92,19 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 .order-chip-badge.tier-1{background:var(--green-bg);color:var(--green)}
 .order-chip-badge.tier-2{background:var(--amber-bg);color:var(--amber)}
 .order-chip-badge.tier-3{background:#ede9fe;color:var(--biller)}
-@media (max-width:720px){.order-grid{grid-template-columns:1fr}}
+/* Phase 2 — paper-sheet IA + one-screen legend */
+.order-grid.sheet-grid{grid-template-columns:1fr 1fr}
+.sheet-col h3{display:flex;align-items:baseline;justify-content:space-between;gap:8px}
+.sheet-tag{font-size:9px;font-weight:500;text-transform:none;letter-spacing:0;color:var(--muted);font-style:italic}
+.order-chip-sheet{display:block;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.4px;color:var(--brand-2);margin-bottom:1px;line-height:1.2}
+.picker-legend{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;padding:10px 14px;margin-bottom:16px;background:#fff;border:1px solid var(--line);border-radius:8px;font-size:11.5px;color:var(--ink-2)}
+.picker-legend .legend-item{display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+.legend-swatch{width:11px;height:11px;border-radius:3px;flex-shrink:0}
+.legend-swatch.sw-covered{background:var(--green)}
+.legend-swatch.sw-tighten{background:var(--amber)}
+.legend-swatch.sw-avoid{background:var(--red)}
+.legend-sep{width:1px;height:15px;background:var(--line)}
+@media (max-width:720px){.order-grid,.order-grid.sheet-grid{grid-template-columns:1fr}}
 
 /* Order result card — slides in when an order is picked */
 .order-result{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px 22px;margin-bottom:14px;box-shadow:var(--shadow);display:none}
@@ -485,28 +497,36 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 
 <div class="container">
 
-  <!-- ORDER PICKER — the provider's primary entry point -->
+  <!-- ORDER PICKER — the provider's primary entry point.
+       Grouped like the physical HVCG order sheet: front (in-house) / back (hospital,
+       referral & monitoring), so a provider who knows the paper sheet maps 1:1. -->
   <div class="order-picker" id="order-picker">
     <div class="order-picker-heading">
       <h2>What are you ordering?</h2>
-      <div class="order-picker-sub">Pick an order → CPT auto-fills → add ICD</div>
+      <div class="order-picker-sub">Pick an order — the codes to key and the covered diagnoses appear. Grouped like the paper order sheet.</div>
     </div>
-    <div class="order-grid">
-      <div class="order-col">
-        <h3>Diagnostic</h3>
-        <div class="order-chips" data-category="diagnostic"></div>
+
+    <!-- One-screen legend: the whole vocabulary in a line, so nothing on the detail
+         page needs prior explanation. -->
+    <div class="picker-legend" id="picker-legend">
+      <span class="legend-item"><span class="legend-swatch sw-covered"></span>Covered — use first</span>
+      <span class="legend-item"><span class="legend-swatch sw-tighten"></span>Tighten — narrow the dx</span>
+      <span class="legend-item"><span class="legend-swatch sw-avoid"></span>Avoid — will deny</span>
+      <span class="legend-sep"></span>
+      <span class="legend-item"><span class="who who-clinician">C</span>Clinician documents</span>
+      <span class="legend-item"><span class="who who-billing">B</span>Billing documents</span>
+      <span class="legend-sep"></span>
+      <span class="legend-item"><span class="profee-badge">PRO-FEE · -26</span>Hospital — bill the professional component</span>
+    </div>
+
+    <div class="order-grid sheet-grid">
+      <div class="order-col sheet-col">
+        <h3>In-house orders <span class="sheet-tag">front of the sheet</span></h3>
+        <div class="order-chips" data-sheet="front"></div>
       </div>
-      <div class="order-col">
-        <h3>Procedural</h3>
-        <div class="order-chips" data-category="procedural"></div>
-      </div>
-      <div class="order-col">
-        <h3>Follow-up</h3>
-        <div class="order-chips" data-category="follow_up"></div>
-      </div>
-      <div class="order-col">
-        <h3>Cath lab <span style="font-weight:400;font-size:11px;color:var(--muted)">(hospital)</span></h3>
-        <div class="order-chips" data-category="cath_hospital"></div>
+      <div class="order-col sheet-col">
+        <h3>Hospital, referral &amp; monitoring <span class="sheet-tag">back of the sheet</span></h3>
+        <div class="order-chips" data-sheet="back"></div>
       </div>
     </div>
   </div>
@@ -519,26 +539,10 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
     <div class="wizard-inner" id="wizard-inner"></div>
   </div>
 
-  <!-- Secondary navigation: classic browse + quiz fallbacks -->
-  <details class="browse-toggle">
-    <summary>Or browse by visit type / use quiz funnel / search symptom</summary>
-    <div class="entry-bar" style="margin-top:14px">
-      <div class="cta" id="cta-quiz"><span class="cta-icon">▶</span> <strong>Quiz mode</strong> · 3-question funnel</div>
-      <div class="cta" id="cta-browse"><span class="cta-icon">▦</span> <strong>Browse</strong> · all visit types</div>
-      <div class="cta" id="cta-symptoms"><span class="cta-icon">＃</span> Search by <strong>symptom</strong></div>
-    </div>
-
-    <div class="quiz" id="quiz"></div>
-
-    <div class="tiles-section" id="tiles-section">
-      <div class="tiles-heading">In-house OBL (POS 11)</div>
-      <div class="tiles" id="tiles-obl"></div>
-      <div class="tiles-heading" style="margin-top:18px">Hospital pro-fee (POS 21–24, -26)</div>
-      <div class="tiles" id="tiles-hospital"></div>
-      <div class="tiles-heading" style="margin-top:18px">Longitudinal</div>
-      <div class="tiles" id="tiles-longitudinal"></div>
-    </div>
-  </details>
+  <!-- Legacy browse/quiz/symptom-tiles layer removed 2026-07-09 (Phase 2): one mental
+       model — the order picker + global search. The renderTiles()/quiz JS is inert
+       (its containers no longer exist; renderTiles guards null and the CTA listeners
+       below are null-safe). -->
 
   <div class="bundle-detail" id="bundle-detail"></div>
 
@@ -1214,14 +1218,15 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
-// CTAs
-$("#cta-quiz").addEventListener("click", startQuiz);
-$("#cta-browse").addEventListener("click", () => {
+// CTAs — legacy quiz/browse/symptom entry points removed in Phase 2 (2026-07-09).
+// Guarded so the page still boots if the elements are absent.
+$("#cta-quiz")?.addEventListener("click", startQuiz);
+$("#cta-browse")?.addEventListener("click", () => {
   endQuiz();
   closeBundle();
-  $("#tiles-section").scrollIntoView({behavior:"smooth"});
+  $("#tiles-section")?.scrollIntoView({behavior:"smooth"});
 });
-$("#cta-symptoms").addEventListener("click", () => {
+$("#cta-symptoms")?.addEventListener("click", () => {
   $("#global-search").focus();
   $("#global-search").placeholder = "Type a symptom: claudication, leg swelling, palpitations...";
 });
@@ -1317,25 +1322,57 @@ function isHospitalOrder(o) {
   return /hospital/i.test(o.setting || "");
 }
 
+// Orders on the BACK of the HVCG paper sheet (hospital, referral & longitudinal).
+// Everything else is a front-sheet in-house order. Mirrors the physical sheet so a
+// provider who knows the paper finds any order in the same place.
+const BACK_SHEET_ORDERS = new Set([
+  "cardiac_cath_left", "cardiac_cath_right", "coronary_pci", "coronary_physiology",
+  "tee", "picc_line", "rpm_monthly",
+]);
+// The plain-English name each order carries on the paper sheet — shown as a small
+// eyebrow so paper users recognize it instantly (the precise clinical name is the title).
+const SHEET_NAMES = {
+  echo: "Heart Ultrasound",
+  nuclear_stress: "Stress Test",
+  telemetry_3day: "Heart Rhythm Monitor",
+  holter: "Heart Rhythm Monitor",
+  le_arterial_duplex: "Leg Artery Ultrasound",
+  venous_duplex: "Leg Vein Ultrasound",
+  carotid_duplex: "Neck Artery Ultrasound",
+  dsa: "Leg Artery Angiogram",
+  pad_intervention: "Leg Artery Procedure",
+  endovenous_ablation: "Varicose Vein Treatment",
+  venous_compression_intervention: "Vein Procedure (Venogram + Stent)",
+  ivus_peripheral_standalone: "Vein/Artery Imaging (IVUS)",
+  tee: "Heart Echo via Scope (TEE)",
+  picc_line: "Vascular Access (PICC)",
+  rpm_monthly: "Remote Monitoring (RPM)",
+  cardiac_cath_left: "Hospital Cath / Coronary Angiogram",
+  cardiac_cath_right: "Hospital Right Heart Cath",
+  coronary_pci: "Hospital PCI (stent / angioplasty)",
+  coronary_physiology: "Hospital FFR / IVUS",
+};
+
 function renderOrderPicker() {
   const orders = DATA.orders || [];
-  const byCat = {diagnostic: [], procedural: [], follow_up: [], cath_hospital: []};
+  const groups = {front: [], back: []};
   for (const o of orders) {
-    const group = isHospitalOrder(o) ? "cath_hospital" : o.category;
-    if (byCat[group]) byCat[group].push(o);
+    groups[BACK_SHEET_ORDERS.has(o.order_id) ? "back" : "front"].push(o);
   }
-  for (const cat of ["diagnostic", "procedural", "follow_up", "cath_hospital"]) {
-    const lst = byCat[cat].sort((a, b) => (b.annual_claim_volume || 0) - (a.annual_claim_volume || 0));
-    const container = document.querySelector(`.order-chips[data-category="${cat}"]`);
+  for (const side of ["front", "back"]) {
+    const lst = groups[side].sort((a, b) => (b.annual_claim_volume || 0) - (a.annual_claim_volume || 0));
+    const container = document.querySelector(`.order-chips[data-sheet="${side}"]`);
     if (!container) continue;
     container.innerHTML = "";
     for (const o of lst) {
       const tierLabel = o.tier === 1 ? "1-click" : o.tier === 2 ? "variant" : "wizard";
+      const sheetName = SHEET_NAMES[o.order_id];
       const chip = el("div", {
           class: `order-chip`,
           onClick: () => onOrderClick(o.order_id),
         },
-        el("div", null,
+        el("div", {style: "min-width:0"},
+          sheetName ? el("span", {class: "order-chip-sheet"}, sheetName) : null,
           el("div", {class: "order-chip-name"}, o.display_name),
           isHospitalOrder(o) ? el("span", {class: "profee-badge", style: "margin:3px 0 0"}, "PRO-FEE · -26") : null,
           o.short_blurb ? el("span", {class: "order-chip-blurb"}, o.short_blurb) : null,
